@@ -1,0 +1,28 @@
+﻿using Xamarin.Forms;
+
+namespace Bank1
+{
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
+            MainPage = new NavigationPage(new Views.LoginPage())
+            {
+                BarBackgroundColor = Color.FromHex("#2196F3")
+            };
+        }
+
+        protected override void OnStart()
+        {
+        }
+
+        protected override void OnSleep()
+        {
+        }
+
+        protected override void OnResume()
+        {
+        }
+    }
+}
